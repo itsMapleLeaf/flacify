@@ -6,6 +6,10 @@
   "scripts": {
     "test": "test.js"
   },
+  "bin": {
+    "flacify": "bin/index.js"
+  },
+  "preferGlobal": "true",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/jasonaibrahim/flacify.git"

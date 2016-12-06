@@ -1,3 +1,5 @@
+#!/usr/bin/env node
+
 const ffmpeg = require('fluent-ffmpeg');
 const mime = require('mime');
 const fs = require('fs');
