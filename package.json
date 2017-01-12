@@ -1,6 +1,6 @@
 {
   "name": "flacify",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Command line tool to convert a directory of audio files into flac format.",
   "main": "index.js",
   "scripts": {
