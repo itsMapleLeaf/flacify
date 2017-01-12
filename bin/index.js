@@ -15,10 +15,11 @@ fs.readdir(dir, (err, files) => {
     files.forEach((file) => {
         if (mime.lookup(file).indexOf('audio') > -1 && !/.flac$/.test(file)) {
             try {
+                const fullPath = dir + '/' + file;
                 ffmpeg()
-                    .input(file)
+                    .input(fullPath)
                     .audioCodec('flac')
-                    .save(`${file}.flac`)
+                    .save(`${fullPath}.flac`)
                     .on('start', () => {
                         console.log(chalk.grey(`starting ${file}...`));
                     })
